@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pathfinding Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Pathfinding Algorithm Visualizer</h1>
+
+  <!-- Control Buttons -->
+  <div class="controls">
+    <button id="set-start">Set Start</button>
+    <button id="set-end">Set End</button>
+    <button id="clear-grid">Clear Grid</button>
+    <select id="algorithm-select">
+      <option value="dijkstra">Dijkstra’s Algorithm</option>
+      <option value="astar">A* Search</option>
+      <option value="bfs">BFS</option>
+      <option value="dfs">DFS</option>
+    </select>
+    <button id="start-algorithm">Start</button>
+  </div>
+
+  <!-- Grid Container -->
+  <div id="grid"></div>
+
+  <!-- Load main script as a module -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

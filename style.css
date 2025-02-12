@@ -1,0 +1,51 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .controls {
+    margin: 20px;
+  }
+  
+  /* Grid Container */
+  #grid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(20, 30px); /* 20 columns of 30px each */
+    gap: 1px;
+    width: fit-content;
+  }
+  
+  /* Cell Styles */
+  .cell {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .cell.start {
+    background-color: green;
+  }
+  
+  .cell.end {
+    background-color: red;
+  }
+  
+  .cell.wall {
+    background-color: black;
+  }
+  
+  .cell.visited {
+    background-color: #add8e6;
+  }
+  
+  .cell.path {
+    background-color: yellow;
+  }
+  
